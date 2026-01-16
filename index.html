@@ -2,29 +2,413 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>التراث اليمني الرقمي</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>التراث اليمني الرقمي | Yemeni Digital Heritage</title>
+    
+    <!-- روابط CSS -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- أيقونة الموقع -->
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/330/330439.png" type="image/x-icon">
+    
+    <!-- وصف الموقع لمحركات البحث -->
+    <meta name="description" content="موقع التراث اليمني الرقمي - يعرض تاريخ وثقافة وعمارة وفنون اليمن">
+    <meta name="keywords" content="اليمن, تراث, تاريخ, عمارة, مطبخ يمني, صنعاء, حضارة سبأ">
+    <meta name="author" content="مشروع التراث اليمني">
 </head>
 <body>
+    <!-- زر تبديل الوضع -->
+    <button id="themeToggle" class="theme-btn" title="تبديل الوضع">
+        <i class="fas fa-moon"></i>
+    </button>
+    
+    <!-- زر العودة للأعلى -->
+    <button id="backToTop" class="back-to-top" title="العودة للأعلى">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <!-- الترويسة -->
     <header>
-        <h1>🇾🇪 التراث اليمني الرقمي</h1>
-        <nav>
-            <a href="index.html">الرئيسية</a>
-            <a href="pages/history.html">التاريخ</a>
-            <a href="pages/architecture.html">العمارة</a>
-            <a href="pages/recipes.html">المطبخ</a>
-        </nav>
+        <div class="logo">
+            <h1>🇾🇪 التراث اليمني الرقمي</h1>
+        </div>
+        <p class="subtitle">حفظ تراث الأجداد للأحفاد | Preserving Yemeni Heritage for Future Generations</p>
     </header>
     
-    <main>
-        <section class="hero">
-            <h2>اكتشف كنوز اليمن الحضارية</h2>
-            <p>من سبأ القديمة إلى فنون العمارة المذهلة</p>
-        </section>
+    <!-- القائمة الرئيسية -->
+    <nav>
+        <div class="nav-container">
+            <a href="#home">الرئيسية</a>
+            <a href="#history">التاريخ</a>
+            <a href="#architecture">العمارة</a>
+            <a href="#food">المطبخ</a>
+            <a href="#arts">الفنون</a>
+            <a href="#gallery">المعرض</a>
+            <a href="#about">عن المشروع</a>
+        </div>
+    </nav>
+    
+    <!-- قسم البطل -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>اليمن: مهد الحضارات</h2>
+            <p>أرض سبأ وبلقيس، موطن البن العربي وأقدم ناطحات السحاب الطينية في العالم</p>
+            <div class="hero-stats">
+                <div class="counter-container">
+                    <div class="counter-item">
+                        <span class="counter-number" data-target="3000">0</span>
+                        <span class="counter-label">سنة من التاريخ</span>
+                    </div>
+                    <div class="counter-item">
+                        <span class="counter-number" data-target="4">0</span>
+                        <span class="counter-label">مواقع تراث عالمي</span>
+                    </div>
+                    <div class="counter-item">
+                        <span class="counter-number" data-target="200">0</span>
+                        <span class="counter-label">طبق تقليدي</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- قسم التاريخ -->
+    <section id="history" class="section">
+        <h2 class="section-title">التاريخ العريق</h2>
+        <div class="cards-container">
+            <div class="card fade-in">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Ma%27rib_Dam_%28Yemen%29.jpg/800px-Ma%27rib_Dam_%28Yemen%29.jpg" 
+                     alt="سد مأرب القديم" class="card-img">
+                <div class="card-content">
+                    <h3>مملكة سبأ</h3>
+                    <p>إحدى أقدم الحضارات في العالم العربي، اشتهرت بمملكة سبأ وسد مأرب العظيم الذي كان معجزة هندسية في زمانه.</p>
+                    <button class="btn">اقرأ المزيد</button>
+                </div>
+            </div>
+            
+            <div class="card fade-in">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Yemeni_architecture_in_Sana%27a.jpg/800px-Yemeni_architecture_in_Sana%27a.jpg" 
+                     alt="الممالك اليمنية القديمة" class="card-img">
+                <div class="card-content">
+                    <h3>الممالك اليمنية</h3>
+                    <p>حمير، معين، قتبان، حضرموت - ممالك عظيمة حكمت اليمن وتركت إرثاً حضارياً مذهلاً.</p>
+                    <button class="btn">اقرأ المزيد</button>
+                </div>
+            </div>
+            
+            <div class="card fade-in">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Mocha_Yemen_%2819th_century%29.jpg/800px-Mocha_Yemen_%2819th_century%29.jpg" 
+                     alt="ميناء المخا" class="card-img">
+                <div class="card-content">
+                    <h3>طريق التجارة</h3>
+                    <p>كان اليمن محطة رئيسية على طريق البخور والتجارة بين الشرق والغرب، وموطن البن العربي الذي اشتهر عالمياً.</p>
+                    <button class="btn">اقرأ المزيد</button>
+                </div>
+            </div>
+        </div>
         
-        <section class="highlights">
-            <!-- محتوى تفاعلي -->
-        </section>
-    </main>
+        <!-- الجدول الزمني -->
+        <div class="history-timeline">
+            <h3 style="text-align: center; margin: 2rem 0; color: var(--yemen-red);">الجدول الزمني</h3>
+            <div class="timeline-item">
+                <h4>1200 ق.م - 275 م</h4>
+                <p>ازدهار مملكة سبأ وعاصمتها مأرب</p>
+            </div>
+            <div class="timeline-item">
+                <h4>110 ق.م - 525 م</h4>
+                <p>مملكة حمير وعصرها الذهبي</p>
+            </div>
+            <div class="timeline-item">
+                <h4>القرن 7 م</h4>
+                <p>دخول الإسلام إلى اليمن</p>
+            </div>
+            <div class="timeline-item">
+                <h4>القرن 16</h4>
+                <p>الاحتلال العثماني الأول</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- قسم العمارة -->
+    <section id="architecture" class="section" style="background-color: #f8f9fa;">
+        <h2 class="section-title">عمارة فريدة</h2>
+        <div class="cards-container">
+            <div class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Sanaa_old_city_2.jpg/800px-Sanaa_old_city_2.jpg" 
+                     alt="صنعاء القديمة" class="card-img">
+                <div class="card-content">
+                    <h3>صنعاء القديمة</h3>
+                    <p>أقدم مدينة مأهولة باستمرار في العالم، تتميز بمنازلها الطينية المزخرفة والنوافذ المقطوعة بالجص.</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Shibam_Wadi_Hadhramaut_Yemen.jpg/800px-Shibam_Wadi_Hadhramaut_Yemen.jpg" 
+                     alt="شبام حضرموت" class="card-img">
+                <div class="card-content">
+                    <h3>شبام حضرموت</h3>
+                    <p>"مانهاتن الصحراء" - أقدم ناطحات سحاب طينية في العالم، مبنية من الطين والقش.</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Al_Saleh_Mosque%2C_Sana%27a%2C_Yemen.jpg/800px-Al_Saleh_Mosque%2C_Sana%27a%2C_Yemen.jpg" 
+                     alt="المساجد اليمنية" class="card-img">
+                <div class="card-content">
+                    <h3>المساجد التاريخية</h3>
+                    <p>مسجد صنعاء الكبير من أقدم المساجد في العالم الإسلامي، بني في حياة الرسول محمد ﷺ.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- قسم المطبخ -->
+    <section id="food" class="section">
+        <h2 class="section-title">المطبخ اليمني</h2>
+        
+        <div class="food-grid">
+            <div class="food-item fade-in">
+                <div class="food-icon">🍗</div>
+                <h3>المندي</h3>
+                <p>لحم مطبوخ بالبخار مع الأرز والتوابل الخاصة، يطهى في التنور الأرضي.</p>
+            </div>
+            
+            <div class="food-item fade-in">
+                <div class="food-icon">🍲</div>
+                <h3>السلتة</h3>
+                <p>يخنة لحم مع خضروات وطحين، تقدم مع خبز التنور الساخن.</p>
+            </div>
+            
+            <div class="food-item fade-in">
+                <div class="food-icon">🍵</div>
+                <h3>قهوة يمنية</h3>
+                <p>البن العربي الأصلي من المخا، مع الهيل والزعفران.</p>
+            </div>
+            
+            <div class="food-item fade-in">
+                <div class="food-icon">🍯</div>
+                <h3>عسل سدر</h3>
+                <p>أجود أنواع العسل في العالم من أشجار السدر الجبلي.</p>
+            </div>
+        </div>
+        
+        <!-- مؤقت الأطباق -->
+        <div class="food-timer" style="text-align: center; margin: 3rem 0; padding: 2rem; background: white; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+            <h3 style="color: var(--yemen-red); margin-bottom: 1rem;">طبق يمني في دائرة الضوء</h3>
+            <div id="foodTimer" style="font-size: 1.2rem;">
+                <!-- سيتم ملؤه بواسطة JavaScript -->
+            </div>
+        </div>
+    </section>
+    
+    <!-- قسم الفنون -->
+    <section id="arts" class="section" style="background-color: #f8f9fa;">
+        <h2 class="section-title">الفنون والحرف</h2>
+        <div class="cards-container">
+            <div class="card">
+                <div class="card-content">
+                    <h3>🔪 النقش على الخشب</h3>
+                    <p>نقوش معقدة على أبواب ونوافذ المنازل اليمنية التقليدية.</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-content">
+                    <h3>🧵 التطريز اليمني</h3>
+                    <p>أزياء مطرزة بخيوط ذهبية وفضية بأنماط هندسية إسلامية.</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-content">
+                    <h3>⚔️ الخناجر المزينة</h3>
+                    <p>الجنبية اليمنية تحفة فنية من الفضة والمعادن الثمينة.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- أداة توليد الأسماء -->
+        <div class="name-generator" style="text-align: center; margin: 3rem 0; padding: 2rem; background: linear-gradient(135deg, var(--yemen-red), var(--yemen-black)); color: white; border-radius: 15px;">
+            <h3 style="margin-bottom: 1rem;">مولد الأسماء اليمنية التقليدية</h3>
+            <div style="font-size: 2rem; font-weight: bold; margin: 1rem 0; min-height: 60px;" id="yemeniName">
+                <!-- سيتم ملؤه بواسطة JavaScript -->
+            </div>
+            <button id="generateName" class="btn" style="background: white; color: var(--yemen-red); border: none;">
+                <i class="fas fa-random"></i> توليد اسم جديد
+            </button>
+        </div>
+    </section>
+    
+    <!-- قسم المعرض -->
+    <section id="gallery" class="section">
+        <h2 class="section-title">معرض الصور</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Sanaa_old_city_2.jpg/400px-Sanaa_old_city_2.jpg" alt="صنعاء القديمة ليلاً">
+            </div>
+            <div class="gallery-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Socotra_Dragon_Tree.jpg/400px-Socotra_Dragon_Tree.jpg" altشجرة دم الأخوين في سقطرى">
+            </div>
+            <div class="gallery-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Al_Hajjarah%2C_Yemen.jpg/400px-Al_Hajjarah%2C_Yemen.jpg" alt="الحجرية في اليمن">
+            </div>
+            <div class="gallery-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Terraced_farming_in_Yemen.jpg/400px-Terraced_farming_in_Yemen.jpg" alt="المدرجات الزراعية">
+            </div>
+            <div class="gallery-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Yemeni_coffee_cup.jpg/400px-Yemeni_coffee_cup.jpg" alt="فنجان قهوة يمنية">
+            </div>
+            <div class="gallery-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Yemeni_jambiya_dagger.jpg/400px-Yemeni_jambiya_dagger.jpg" alt="خنجر يمني تقليدي">
+            </div>
+        </div>
+    </section>
+    
+    <!-- قسم الكلمات اليمنية -->
+    <section class="section" style="text-align: center; background: var(--yemen-sand);">
+        <h3 style="color: var(--yemen-black); margin-bottom: 1rem;">كلمة يمنية اليوم</h3>
+        <div id="yemeniWord" style="font-size: 1.5rem; color: var(--yemen-red); font-weight: bold; padding: 1rem;">
+            <!-- سيتم ملؤه بواسطة JavaScript -->
+        </div>
+        <p style="color: #666; margin-top: 1rem;">تتغير الكلمة كل 10 ثواني</p>
+    </section>
+    
+    <!-- قسم عن المشروع -->
+    <section id="about" class="section">
+        <h2 class="section-title">عن المشروع</h2>
+        <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+            <p style="font-size: 1.2rem; line-height: 1.8; margin-bottom: 2rem;">
+                مشروع التراث اليمني الرقمي هو مبادرة غير ربحية تهدف إلى توثيق والحفاظ على التراث الثقافي اليمني الغني 
+                وعرضه للعالم بلغات متعددة. نحن نؤمن بأن الحفاظ على التراث هو حفاظ على الهوية والإرث الحضاري.
+            </p>
+            
+            <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+                <div class="about-item">
+                    <i class="fas fa-bullseye" style="color: var(--yemen-red); font-size: 2rem; margin-bottom: 1rem;"></i>
+                    <h4>الرؤية</h4>
+                    <p>أن يكون اليمن معروفاً بتراثه لا بحروبه</p>
+                </div>
+                
+                <div class="about-item">
+                    <i class="fas fa-hands-helping" style="color: var(--yemen-red); font-size: 2rem; margin-bottom: 1rem;"></i>
+                    <h4>المساهمة</h4>
+                    <p>يمكنك إضافة محتوى أو تصحيح معلومات</p>
+                </div>
+                
+                <div class="about-item">
+                    <i class="fas fa-globe" style="color: var(--yemen-red); font-size: 2rem; margin-bottom: 1rem;"></i>
+                    <h4>متاح للجميع</h4>
+                    <p>مشروع مفتوح المصدر مجاني بالكامل</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- التذييل -->
+    <footer>
+        <div class="footer-content">
+            <h3>التراث اليمني الرقمي</h3>
+            <p>Yemeni Digital Heritage Project</p>
+            
+            <div class="social-links">
+                <a href="#" class="social-icon" title="فيسبوك">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="#" class="social-icon" title="تويتر">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="social-icon" title="إنستغرام">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="social-icon" title="جيت هاب">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            
+            <div style="margin: 2rem 0;">
+                <p>التاريخ الهجري: <span id="hijriDate" style="font-weight: bold;"></span></p>
+                <p>التوقيت اليمني: <span id="yemenTime" style="font-weight: bold;"></span></p>
+            </div>
+            
+            <div class="copyright">
+                <p>© <span id="currentYear"></span> التراث اليمني الرقمي - جميع الحقوق محفوظة</p>
+                <p>صنع بكل فخر في اليمن 🇾🇪</p>
+                <p style="font-size: 0.9rem; opacity: 0.7; margin-top: 1rem;">
+                    هذا موقع تعليمي، الصور من ويكيميديا كومنز تحت رخصة المشاع الإبداعي
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- رابط JavaScript -->
+    <script src="script.js"></script>
+    
+    <!-- CSS إضافي داخلي -->
+    <style>
+        .theme-btn {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background: var(--yemen-red);
+            color: white;
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 2000;
+            font-size: 1.2rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .theme-btn:hover {
+            background: var(--yemen-black);
+            transform: rotate(30deg);
+        }
+        
+        .about-item {
+            flex: 1;
+            min-width: 200px;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .hero-stats {
+            margin-top: 2rem;
+            background: rgba(255,255,255,0.1);
+            padding: 1.5rem;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .dark-mode {
+            background-color: #1a1a1a;
+            color: #f0f0f0;
+        }
+        
+        .dark-mode .card {
+            background-color: #2d2d2d;
+            color: #f0f0f0;
+        }
+        
+        .dark-mode .section {
+            background-color: #222 !important;
+        }
+        
+        .food-timer {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(206, 17, 38, 0.4); }
+            70% { box-shadow: 0 0 0 15px rgba(206, 17, 38, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(206, 17, 38, 0); }
+        }
+    </style>
 </body>
-</html>
+    </html>
